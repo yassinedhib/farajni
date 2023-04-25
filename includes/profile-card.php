@@ -1,7 +1,7 @@
 
 
             <div class='card card-profile text-center'>
-                <img alt='' class='card-img-top card-user-cover' src='img//section/section.png'>
+                <img alt='' class='card-img-top card-user-cover' src='img/section/section.png'>
                 <div class='card-block'>
                     <a href='profile.php'>
                         <img src='uploads/<?php echo $_SESSION["userImg"] ?>' class='card-img-profile'>

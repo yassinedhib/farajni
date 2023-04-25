@@ -14,4 +14,4 @@
         
         
         
-        <link rel="shortcut icon" href="img/favicon.png" />
+        <link rel="shortcut icon" href="img/section/section.png" />

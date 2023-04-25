@@ -26,7 +26,7 @@
             </div>
         <div class="col-sm-8 text-center" id="user-section">
               
-              <img class="cover-img" id='blah-cover' src="img/user-cover.png">
+              <img class="cover-img" id='blah-cover' src="img/section/section.png">
               
               <form action="includes/profileUpdate.inc.php" method='post' enctype="multipart/form-data"
                     style="padding: 0 30px 0 30px;">
