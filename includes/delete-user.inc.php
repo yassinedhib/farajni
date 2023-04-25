@@ -1,7 +1,7 @@
 <?php
 
 session_start();
-$conn=mysqli_connect("localhost","root","","user_db");
+$conn=mysqli_connect("localhost","root","","farajni");
 
 if (isset($_GET['user']) && isset($_SESSION['userId']) && ($_SESSION['userLevel'] == 1))
 {

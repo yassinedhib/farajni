@@ -4,6 +4,7 @@ if (isset($_POST['signup-submit']))
 {
     
     require 'config.php';
+    $conn=mysqli_connect("localhost","root","","Farajni");
     
     
     $userName = $_POST['uid'];

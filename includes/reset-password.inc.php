@@ -1,5 +1,5 @@
 <?php
-$conn=mysqli_connect("localhost","root","","user_db");
+$conn=mysqli_connect("localhost","root","","Farajni");
 if (isset($_POST['reset-password-submit']))
 {
     $selector = $_POST['selector'];

@@ -2,7 +2,7 @@
 
     session_start();
     define('TITLE',"Contact Us | Farajni");
-    $conn=mysqli_connect("localhost","root","","user_db");
+    $conn=mysqli_connect("localhost","root","","farajni");
     include 'includes/HTML-head.php';
     include 'includes/email-server.php';
 ?>  

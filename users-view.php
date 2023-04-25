@@ -2,7 +2,7 @@
 
     session_start();
     require 'includes/config.php';
-$conn=mysqli_connect("localhost","root","","user_db");
+$conn=mysqli_connect("localhost","root","","farajni");
     
     define('TITLE',"Find People | Farajni");
     

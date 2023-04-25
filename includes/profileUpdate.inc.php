@@ -1,6 +1,6 @@
 <?php
 session_start();
-$conn=mysqli_connect("localhost","root","","user_db");
+$conn=mysqli_connect("localhost","root","","Farajni");
 if (isset($_POST['update-profile']))
 {
     

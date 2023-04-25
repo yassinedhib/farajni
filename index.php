@@ -2,7 +2,7 @@
 <?php
 
     session_start();
-$conn=mysqli_connect("localhost","root","","user_db");
+$conn=mysqli_connect("localhost","root","","farajni");
     include_once 'includes/config.php';
     define('TITLE',"Dashboard| Farajni");
 

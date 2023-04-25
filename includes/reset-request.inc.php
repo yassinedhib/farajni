@@ -1,7 +1,7 @@
 <?php
 
 include 'email-server.php';
-$conn=mysqli_connect("localhost","root","","user_db");
+$conn=mysqli_connect("localhost","root","","farajni");
 
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception; 
@@ -11,7 +11,7 @@ if (isset($_POST['reset-request-submit']))
     $selector = bin2hex(random_bytes(8));
     $token = random_bytes(32);
     
-    $url = $Domain . "/klik/create-new-pwd.php?selector=" . $selector . "&validator=" . bin2hex($token);
+    $url = $Domain . "/Farajni/create-new-pwd.php?selector=" . $selector . "&validator=" . bin2hex($token);
     
     $expires = date("U") + 1800;
     

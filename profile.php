@@ -2,12 +2,13 @@
 
     session_start();
     require 'includes/config.php';
+$conn=mysqli_connect("localhost","root","","farajni");
     
     define('TITLE',"Profile | Farajni");
     
     if(!isset($_SESSION['userId']))
     {
-        header("Location: login.php");
+        header("Location: index.php");
         exit();
     }
     

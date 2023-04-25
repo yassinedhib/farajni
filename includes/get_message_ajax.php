@@ -1,6 +1,6 @@
 <?php
     session_start();
-$conn=mysqli_connect("localhost","root","","user_db");
+$conn=mysqli_connect("localhost","root","","Farajni");
     require("config.php");
     if(isset($_GET['c_id'])){
         $conversation_id = base64_decode($_GET['c_id']);
