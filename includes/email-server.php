@@ -1,7 +1,6 @@
 <?php
 
-$SMTPuser = 'esprit.tn';
-$SMTPpwd = 'yassine.dhib@esprit.tn';
-$SMTPtitle = "Farjni inc.";
+$SMTPuser = 'yassinedhib7@gmail.com';
+$SMTPpwd = 'DHIB1932001';
+$SMTPtitle = "farajni inc.";
 $Domain = 'localhost';
-
