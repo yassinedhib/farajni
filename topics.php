@@ -49,7 +49,7 @@ define('TITLE',"Forums | farajni");
 
         <main role="main" class="container">
       <div class="d-flex align-items-center p-3 my-3 text-white-50 bg-purple rounded shadow-sm">
-          <img class="mr-3" src="img/200.png" alt="" width="48" height="48">
+          <img class="mr-3" src="img/logo%20123.png" alt="" width="48" height="48">
         <div class="lh-100">
           <h1 class="mb-0 text-white lh-100">KLiK Forums</h1>
           <small>Spreading Ideas</small>
@@ -106,7 +106,7 @@ define('TITLE',"Forums | farajni");
                     
                     echo '<a href="posts.php?topic='.$row['topic_id'].'">
                         <div class="media text-muted pt-3">
-                            <img src="img/forum-cover.png" alt="" class="mr-2 rounded div-img">
+                            <img src="img/section/section.png" alt="" class="mr-2 rounded div-img">
                             <p class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
                               <strong class="d-block text-gray-dark">'.ucwords($row['topic_subject']).'</strong></a>
                               <span class="text-warning">'.ucwords($row['uidUsers']).'</span><br><br>
