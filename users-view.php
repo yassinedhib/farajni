@@ -76,7 +76,7 @@ $conn=mysqli_connect("localhost","root","","farajni");
                      }
                   if ($_SESSION['userLevel'] == 1)
                   {
-                      echo '<a href="includes/delete-user.inc.php?id='.$row['uidUsers'].'&page=user-view" >
+                      echo '<a href="includes/delete-user.inc.php?id='.$row['idUsers'].'&page=user-view" >
                                 <i class="fa fa-trash" aria-hidden="true" style="color: red;"></i>
                               </a>
                             </span>';

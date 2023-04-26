@@ -152,6 +152,7 @@ $conn=mysqli_connect("localhost","root","","farajni");
                         </div>
 
                         <a href="forum.php" class="btn btn-warning btn-lg btn-block">Farajni Forum</a>
+                        <a href="categories.php" class="btn btn-secondary btn-lg btn-block">Farajni Categories</a>
                         <br><br><br>
                         <a href="create-topic.php" class="btn btn-warning btn-lg btn-block">Create a Forum</a>
                     </div>
