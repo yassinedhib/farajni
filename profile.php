@@ -52,7 +52,9 @@ include 'includes/HTML-head.php';
 
             <div class="col-sm-8 text-center" id="user-section">
                 <img class="cover-img" src="img/section/section.png">
+
                 <img class="profile-img" src="uploads/<?php echo $user['userImg']; ?>">
+
 
                 <?php
                 if ($user['userLevel'] === 1)

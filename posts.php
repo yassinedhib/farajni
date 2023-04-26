@@ -180,8 +180,8 @@ define('TITLE',"Forum | farajni");
 
                                     <div class="col-sm-3 user">
                                         <div class="text-center">
+                                      <img class="profile-img" id="blah"  src="uploads/" > 
                   
-                                            <img src="uploads/'.$row['userImg'].'" class="img-fluid center-block user-img">
                                             <h3>'.$row['uidUsers'].'</h3>
                                             <small class="text-muted">'.$row['headline'].'</small><br><br>
                                             <table style="width:100%">
