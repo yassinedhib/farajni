@@ -1212,7 +1212,7 @@ test\\_%|schema||&apos;&apos;||UPDATE|G</Grants>
       <CollationName>utf8_general_ci</CollationName>
     </table>
     <column id="345" parent="337" name="cat_id">
-      <AutoIncrement>6</AutoIncrement>
+      <AutoIncrement>7</AutoIncrement>
       <DasType>int(8)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
@@ -1328,7 +1328,7 @@ test\\_%|schema||&apos;&apos;||UPDATE|G</Grants>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
     </key>
     <column id="369" parent="340" name="post_id">
-      <AutoIncrement>5</AutoIncrement>
+      <AutoIncrement>8</AutoIncrement>
       <DasType>int(8)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
@@ -1459,7 +1459,7 @@ test\\_%|schema||&apos;&apos;||UPDATE|G</Grants>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
     </key>
     <column id="395" parent="343" name="topic_id">
-      <AutoIncrement>3</AutoIncrement>
+      <AutoIncrement>6</AutoIncrement>
       <DasType>int(8)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
@@ -1503,7 +1503,7 @@ test\\_%|schema||&apos;&apos;||UPDATE|G</Grants>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
     </key>
     <column id="404" parent="344" name="idUsers">
-      <AutoIncrement>4</AutoIncrement>
+      <AutoIncrement>5</AutoIncrement>
       <DasType>int(11)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
