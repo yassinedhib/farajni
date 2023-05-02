@@ -27,7 +27,7 @@ define('TITLE',"Forum | farajni");
 ?>
 
         <link href="css/forum-styles.css" rel="stylesheet">
-    </head>
+
 
 <body>
 
@@ -217,7 +217,7 @@ define('TITLE',"Forum | farajni");
 
                         if ($voted_u)
                         {
-                            echo "<a href='includes/post-vote.inc.php?topic=".$topic."&post=".$row['post_id']."&vote=1' >";
+                            echo "<a href='includes/post-vote.inc.php?topic=".$topic."&post=".$row['post_id']."&vote=vote+1' >";
                         }
                         echo '<i class="fa fa-chevron-up fa-3x" aria-hidden="true"></i></a>';
 
@@ -227,7 +227,7 @@ define('TITLE',"Forum | farajni");
 
                         if ($voted_d)
                         {
-                            echo "<a href='includes/post-vote.inc.php?topic=".$topic."&post=".$row['post_id']."&vote=-1' >";
+                            echo "<a href='includes/post-vote.inc.php?topic=".$topic."&post=".$row['post_id']."&vote=vote-1' >";
                         }
                         echo '<i class="fa fa-chevron-down fa-3x" aria-hidden="true"></i></a>';
 
@@ -267,4 +267,3 @@ define('TITLE',"Forum | farajni");
         <script src="js/jquery.min.js"></script>
         <script src="js/bootstrap.min.js" ></script>
     </body>
-</html>
