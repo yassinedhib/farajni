@@ -123,7 +123,7 @@ $conn=mysqli_connect("localhost","root","","farajni");
 
                                             mysqli_stmt_execute($stmt);
                                             $conver = mysqli_stmt_get_result($stmt);
-                                            mysqli_stmt_store_result($stmt);
+                                          //  mysqli_stmt_store_result($stmt);
 
                                             if (mysqli_num_rows($conver) > 0)
                                             {

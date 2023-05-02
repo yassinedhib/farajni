@@ -2,26 +2,27 @@
     session_start();
 $conn=mysqli_connect("localhost","root","","Farajni");
     require("config.php");
-    if(isset($_GET['c_id'])){
+    if(isset($_GET['c_id'])) {
         $conversation_id = base64_decode($_GET['c_id']);
-        
-        $q = mysqli_query($conn, "SELECT * FROM messages WHERE conversation_id = ".$conversation_id);
-        
-        if(mysqli_num_rows($q) > 0){
+
+        $q = mysqli_query($conn, "SELECT * FROM messages WHERE conversation_id = " . $conversation_id);
+
+        if (mysqli_num_rows($q) > 0) {
             while ($m = mysqli_fetch_assoc($q)) {
                 //format the message and display it to the user
                 $user_form = $m['user_from'];
                 $user_to = $m['user_to'];
                 $message = $m['message'];
- 
-                //get name and image of $user_form from `user` table
-                $user = mysqli_query($conn, "SELECT uidUsers, userImg FROM users WHERE idUsers = '$user_form'");
+
+
+                $user = mysqli_query($conn, "SELECT uidUsers,f_name, userImg FROM users WHERE idUsers = '$user_form'");
                 $user_fetch = mysqli_fetch_assoc($user);
                 $user_form_username = $user_fetch['uidUsers'];
                 $user_form_img = $user_fetch['userImg'];
- 
+                $user_form_name = $user_fetch['f_name'];
+
                 //display the message
-                if ($user_form_username === $_SESSION['userUid']) 
+                if ($user_form_username === $_SESSION['userUid'])
                 {
                     echo '<div class="outgoing_msg">
                             <div class="sent_msg">
@@ -29,7 +30,7 @@ $conn=mysqli_connect("localhost","root","","Farajni");
                             </div>
                           </div>';
                 }
-                else 
+                else
                 {
                     echo '<div class="incoming_msg">
                             <div class="incoming_msg_img"> <img class="chat_people_inbox_img" src="uploads/'.$user_form_img.'"> </div>
@@ -41,8 +42,8 @@ $conn=mysqli_connect("localhost","root","","Farajni");
                              </div>
                            </div>';
                 }
-                
- 
+
+
             }
         }else{
             echo "<div class='text-center'>

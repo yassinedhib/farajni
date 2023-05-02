@@ -72,19 +72,20 @@ $conn=mysqli_connect("localhost","root","","farajni");
                                           </a>
                                       </span>
                                   </div>';
-                          }
-                     }
-                  if ($_SESSION['userLevel'] == 1)
-                  {
-                      echo '<a href="includes/delete-user.inc.php?id='.$row['idUsers'].'&page=user-view" >
+                              if ($_SESSION['userLevel'] == 1)
+                              {
+                                  echo '<a href="includes/delete-user.inc.php?id='.$row['idUsers'].'&page=users-view" >
                                 <i class="fa fa-trash" aria-hidden="true" style="color: red;"></i>
                               </a>
                             </span>';
-                  }
-                  else
-                  {
-                      echo '</span>';
-                  }
+                              }
+                              else
+                              {
+                                  echo '</span>';
+                              }
+                          }
+                     }
+
                   ?>
 
                       <small class="d-block text-right mt-3">

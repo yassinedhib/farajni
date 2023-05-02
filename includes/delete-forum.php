@@ -42,6 +42,7 @@ if (isset($_GET['id']) && isset($_SESSION['userId']))
 }
 else
 {
+    $page = 'forum';
     header("Location: ../".$page.".php");
     exit();
 }

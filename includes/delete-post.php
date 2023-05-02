@@ -36,6 +36,7 @@ if (isset($_GET['topic']) && isset($_GET['post']) && ($_GET['by'] == $_SESSION['
 
 else
 {
+    $topic = $_GET['topic'];
     header("Location: ../posts.php?topic=".$topic);
     exit();
 }

@@ -27,6 +27,11 @@
         require 'phpmailer/src/Exception.php';
         require 'PHPMailer/src/PHPMailer.php';  
         require 'PHPMailer/src/SMTP.php';
+
+$SMTPuser = 'yassinedhib7@gmail.com';
+$SMTPpwd = 'wrbeuddgmiqvkfzb';
+$SMTPtitle = "farajni inc.";
+$Domain = 'localhost';
         
         
         // check for header injection
